@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="product" class="com.spring.basics.Product">
+		<property name="productId" value="501"></property>
+		<property name="productName" value="Telephone"></property>
+		<property name="prices">
+			<list>
+				<value>3000</value>
+				<value>5000</value>
+				<value>7000</value>
+			</list>
+		</property>
+		<property name="pdtCategory" ref="category"></property>
+	</bean>
+	<bean id = "category" class="com.spring.basics.ProductCategory">
+		<property name="categoryId" value="701"></property>
+		<property name="categoryName" value="Communications"></property>
+
+	</bean>
+
+</beans>
+                
