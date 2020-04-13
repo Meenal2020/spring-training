@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans.xsd"
+                default-init-method="init"
+                default-destroy-method="destroy">
+
+	<bean id="product" class="com.spring.basics.Product" autowire="constructor"
+	>
+
+	</bean>
+	<bean id="pdtCategoryNew" class="com.spring.basics.ProductCategory">
+		<property name="categoryId" value="701"></property>
+		<property name="categoryName" value="Communications"></property>
+	</bean>
+
+</beans>
+                
